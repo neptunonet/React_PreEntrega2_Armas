@@ -1,6 +1,7 @@
 .item-detail {
   margin: auto;
-  max-width: 1440px;
+  max-width: 720px;
+  padding: 1rem;
   @include flex(row, space-around, center);
   gap: 2rem;
   &__picture {

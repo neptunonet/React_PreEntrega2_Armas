@@ -1,0 +1,12 @@
+.footer {
+  background-color: $black;
+  padding: 2rem 0;
+  @include flex(row, center, center);
+  gap: 2rem;
+  color: $white;
+  font-family: $raleway;
+  font-size: $medium; 
+  font-weight: 500;
+}
+
+

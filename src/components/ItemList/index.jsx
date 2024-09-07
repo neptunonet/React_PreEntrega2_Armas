@@ -9,10 +9,14 @@ const ItemList = ({category}) => {
   useEffect(() => {
     fetch('/src/data/items.json')
     .then(res => res.json())
-    .then(data => setItems(data))
+    .then(data => {
+      if (category) {
+        setItems(data.filter(item => item.category === category))
+      } else {
+        setItems(data);
+      }
+    })
 }, []);
-
-
 
   return(
      <section className="items__container container">

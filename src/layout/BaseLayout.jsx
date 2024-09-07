@@ -1,4 +1,5 @@
 //import Header from "../containers/Header";
+import Footer from "../containers/Footer";
 import Header from "../containers/Header";
 
 const BaseLayout = ({ children }) => {
@@ -7,9 +8,7 @@ const BaseLayout = ({ children }) => {
     <>
       <Header />
       { children }
-      <footer>
-        <p>Footer del site</p>
-      </footer>
+      <Footer />
     </>
   );
 };

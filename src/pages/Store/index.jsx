@@ -7,7 +7,7 @@ const Store = () => {
   return (
     <>
       <aside>
-        <p>filtros</p>
+        <p>Futuros Filtros</p>
       </aside>
       <ItemList category={id} />
     </>
